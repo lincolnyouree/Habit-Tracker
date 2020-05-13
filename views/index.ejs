@@ -6,7 +6,6 @@
   </head>
   <body>
     <h1>Habit Tracker</h1>
-    <p>Track Your Habits!</p>
       <form action="/habits" method="POST">
         <input type="text" name="habit">
         <button type="submit">Add Habit</button>
@@ -21,7 +20,7 @@
         <div><%= t.habit %>
          --
          <%= t.done ? 'Done' : 'Not Done' %>
-         <a href="/habits/<%= idx %>">Edit Habit</a>
+         <a href="/habits/<%= idx %>">Update</a>
         </div><br>
       <% }) %>
 

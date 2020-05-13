@@ -1,17 +1,32 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  padding: 5vmin;
+  font: 4vmin "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-image: url(https://i.imgur.com/KMx6s4V.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
 }
 
 a {
-  color: #00B7FF;
+  color: black;
 }
 
 div, form {
   display: inline
 }
 
-#deletebtn {
+/* #btn {
   background-color: red;
   color: white;
+} */
+
+h1 {
+
+}
+
+p {
+
 }

@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Show us your habits!</title>
+    <title>Habit Tracker</title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-    <h1>Update Habit</h1>
+    <h1>Habit Tracker</h1>
     <form action="/habits/<%= idx %>?_method=PUT" method="POST">
         <input type="text"name="habit" value="<%= habit.habit %>">
         <input type="checkbox" name="done" value="done" <%= habit.done ? 'checked' : '' %>>
-        <button type="submit">Update Habit</button>
+        <button type="submit">Update</button>
     </form>
   </body>
 </html>
