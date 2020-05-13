@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Habit Tracker</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>Habit Tracker</h1>
+    <p>Track Your Habits!</p>
+      <form action="/habits" method="POST">
+        <input type="text" name="habit">
+        <button type="submit">Add Habit</button>
+        <br><br>
+      </form>
+      <% if (habits.length) { %>
+      <% habits.forEach(function(t, idx) {%>
+        <div>
+          <form action="/habits/<%= idx %>?_method=DELETE" method="POST">
+            <button type="submit" id="deletebtn">X</button>
+          </form>
+        <div><%= t.habit %>
+         --
+         <%= t.done ? 'Done' : 'Not Done' %>
+         <a href="/habits/<%= idx %>">Edit Habit</a>
+        </div><br>
+      <% }) %>
+
+      <% } else { %>
+        <h3>You haven't added any habits yet!</h3>
+    <% } %>
+  </body>
+</html>
