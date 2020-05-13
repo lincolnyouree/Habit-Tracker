@@ -5,6 +5,7 @@
 ## Technologies Implemented: 
 
 * JavaScript
+* Node | Express
 * HTML | EJS
 * CSS
 
